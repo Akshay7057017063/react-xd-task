@@ -1,16 +1,62 @@
-# React + Vite
+# PopX React Challenge – Login Credentials
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
 
-Currently, two official plugins are available:
+This project includes a simple login system with frontend validation. The credentials are currently hardcoded for testing purposes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🔐 Demo Login Credentials
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Use the following credentials to log in:
 
-## Expanding the ESLint configuration
+* **Email:** [test@popx.com](mailto:test@popx.com)
+* **Password:** 123456
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ⚙️ Validation Rules
+
+The login form includes the following validations:
+
+* Email is required
+* Password is required
+* Email must be in a valid format
+* Invalid credentials will show an alert message
+
+---
+
+## 🚀 Behavior
+
+* If fields are empty → shows alert:
+  `Please enter Email and Password`
+
+* If email is invalid → shows alert:
+  `Please enter a valid email address`
+
+* If credentials are incorrect → shows alert:
+  `Invalid credentials`
+
+* If credentials are correct → redirects to `/account`
+
+---
+
+## 🛠 Tech Stack
+
+* React.js
+* React Router DOM
+* Tailwind CSS
+
+---
+
+## 📎 Notes
+
+This is a frontend-only implementation. In a real-world application:
+
+* Credentials should be verified via backend API
+* Passwords must be securely hashed
+* Authentication should use JWT or session-based auth
+
+---
+
+## 👨‍💻 Aut
